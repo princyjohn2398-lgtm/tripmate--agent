@@ -2,7 +2,7 @@
 
 TripMate answers natural-language travel questions (visa/entry, weather, packing, safety, local customs) for four destinations: **Tokyo, Reykjavik, Bangkok and Barcelona**. An LLM decides, per question, which tools to call, runs them in the right order, and writes one combined answer. Every tool call is shown in a visible trace and written to a structured log.
 
-**Video walkthrough:** _add your Loom link here_
+**Video walkthrough:** https://www.loom.com/share/356bbe9de34141dabc2a22f20349e4b5
 
 ## Features
 
