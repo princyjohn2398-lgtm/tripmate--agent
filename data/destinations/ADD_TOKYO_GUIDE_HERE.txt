@@ -1,1 +1,0 @@
-The assessment README lists tokyo.txt, but it was not among the uploaded destination files. Add the official tokyo.txt supplied by the assessment organizer here when available. Do not treat the mock weather entry as a destination guide.
