@@ -1,13 +1,10 @@
 """Command-line entry point for TripMate."""
-import logging
 from agent import run_agent
+from logging_setup import setup_logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(name)s %(message)s",
-)
 
 def main():
+    setup_logging()
     print("TripMate Travel Assistant (type 'exit' to quit)")
     print("Note: the weather dataset is mock data, not a live forecast.")
     while True:
@@ -25,9 +22,12 @@ def main():
             print("\n--- Visible tool trace ---")
             for item in result["trace"]:
                 print(f"Tool: {item['tool']}")
+                print(f"Why: {item.get('reason') or '(not given)'}")
                 print(f"Arguments: {item['arguments']}")
                 print(f"Result: {item['result']}")
+                print()
             print("--------------------------")
+
 
 if __name__ == "__main__":
     main()
